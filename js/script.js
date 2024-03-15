@@ -20,8 +20,10 @@ for (let i = 1; i <= 100; i++){
     box.setAttribute("class", "single-box"); //al div assegno la classe box
     box.innerHTML=i;
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
-    box.addEventListener("click", function(){
+    // aggiungo funzione per cambiare il colore dei singoli box
+    box.addEventListener("click", function(){ 
         box.classList.add("bg-color");
+        //Stampo messaggio in console
         console.log(`Hai selezionato la casella ${box.innerHTML}`);
      })
 }

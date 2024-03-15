@@ -1,0 +1,26 @@
+/* Reset */
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Debug */
+.debug{
+    border: 1px solid red;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.337);
+    color: white;
+}

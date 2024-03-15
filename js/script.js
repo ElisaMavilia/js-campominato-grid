@@ -20,5 +20,10 @@ for (let i = 1; i <= 100; i++){
     box.setAttribute("class", "single-box"); //al div assegno la classe box
     box.innerHTML=i;
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
-   
 }
+
+
+let button = document.getElementById("play");
+button.addEventListener("click", function(){
+boxContainer.classList.remove("d-none");
+})

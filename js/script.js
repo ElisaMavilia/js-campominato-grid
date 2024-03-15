@@ -22,7 +22,7 @@ for (let i = 1; i <= 100; i++){
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
     box.addEventListener("click", function(){
         box.classList.add("bg-color");
-        console.log(`Hai selezionato la casella ${box.innerHTML}!`);
+        console.log(`Hai selezionato la casella ${box.innerHTML}`);
      })
 }
 

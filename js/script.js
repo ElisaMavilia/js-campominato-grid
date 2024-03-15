@@ -6,8 +6,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 // COSA MI SERVE?
 
-// - Una funzione event listener per il bottone (per far apparire la griglia)
-// - Un ciclo for per moltiplicare i singoli box
+// V Una funzione event listener per il bottone (per far apparire la griglia) 
+// V Un ciclo for per moltiplicare i singoli box
 // - Una funzione per il clic dei singoli box
 // - Condizione per la stampa in console 
 
@@ -20,10 +20,17 @@ for (let i = 1; i <= 100; i++){
     box.setAttribute("class", "single-box"); //al div assegno la classe box
     box.innerHTML=i;
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
+    box.addEventListener("click", function(){
+        box.classList.add("bg-color");
+     })
 }
-
 
 let button = document.getElementById("play");
 button.addEventListener("click", function(){
 boxContainer.classList.remove("d-none");
+})
+
+
+box.addEventListener("click", function(){
+   classList.add("bg-color");
 })

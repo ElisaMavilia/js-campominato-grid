@@ -10,3 +10,13 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 // - Un ciclo for per duplicare i singoli box
 // - Una funzione per il clic dei singoli box
 // - Condizione per la stampa in console 
+
+// inizio prendendo il container con il suo #id
+const boxContainer = document.getElementById("box-container");
+
+// inizializzo un cilo di 100
+for (let i = 0; i <= 100, i++;){
+    let box = document.createElement("div"); //creo un div 
+    box.setAttribute("class", "box"); //al div assegno la classe box
+    boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
+}

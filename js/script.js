@@ -7,7 +7,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 // COSA MI SERVE?
 
 // - Una funzione event listener per il bottone (per far apparire la griglia)
-// - Un ciclo for per duplicare i singoli box
+// - Un ciclo for per moltiplicare i singoli box
 // - Una funzione per il clic dei singoli box
 // - Condizione per la stampa in console 
 
@@ -17,6 +17,8 @@ const boxContainer = document.getElementById("box-container");
 // inizializzo un cilo di 100
 for (let i = 0; i <= 100, i++;){
     let box = document.createElement("div"); //creo un div 
-    box.setAttribute("class", "box"); //al div assegno la classe box
+    box.setAttribute("class", "single-box"); //al div assegno la classe box
+    box.innerHTML=i;
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
+   
 }

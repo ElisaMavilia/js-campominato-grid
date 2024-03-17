@@ -103,4 +103,9 @@ aside{
         font-size: 1.2em;
         padding-top: 6px;
     }
+
+    .btn{
+        width: 70px;
+        height: 15px;
+    }
 }

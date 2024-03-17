@@ -20,14 +20,7 @@ for (let i = 1; i <= 100; i++){
     box.setAttribute("class", "single-box"); //al div assegno la classe box
     box.innerHTML=i;
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
-    box.onmouseover = function(){mouseOver()} //aggiunto hover//
-    box.onmouseout = function(){mouseOut()}
-    function mouseOver() {
-       box.style.opacity = "0.5";
-      }
-      function mouseOut() {
-        box.style.opacity=""; /* mouseout deve essere vuoto altrimenti l'hover rimane fisso */
-      }
+   
     // aggiungo funzione per cambiare il colore dei singoli box
     // Creo un primo eventListener per il primo click
    box.addEventListener ("click", function(){ 

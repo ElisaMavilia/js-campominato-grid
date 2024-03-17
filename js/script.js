@@ -8,8 +8,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 // V Una funzione event listener per il bottone (per far apparire la griglia) 
 // V Un ciclo for per moltiplicare i singoli box
-// V Una funzione per il clic dei singoli box
-// V Condizione per la stampa in console 
+// V Una funzione event listener per il clic dei singoli box
+
 
 // inizio prendendo il container con il suo #id
 const boxContainer = document.getElementById("box-container");
@@ -20,15 +20,32 @@ for (let i = 1; i <= 100; i++){
     box.setAttribute("class", "single-box"); //al div assegno la classe box
     box.innerHTML=i;
     boxContainer.appendChild(box); // e lo rendo figlio dell'id box-container
+    box.onmouseover = function(){mouseOver()} //aggiunto hover//
+    box.onmouseout = function(){mouseOut()}
+    function mouseOver() {
+       box.style.opacity = "0.5";
+      }
+      function mouseOut() {
+        box.style.opacity=""; /* mouseout deve essere vuoto altrimenti l'hover rimane fisso */
+      }
     // aggiungo funzione per cambiare il colore dei singoli box
-    box.addEventListener("click", function(){ 
+    // Creo un primo eventListener per il primo click
+   box.addEventListener ("click", function(){ 
         box.classList.add("bg-color");
-        //Stampo messaggio in console
         console.log(`Hai selezionato la casella ${box.innerHTML}`);
+ // Creo un secondo eventListener per il secondo click
+        box.addEventListener ("click", function(){ 
+            box.classList.remove("bg-color");
+            console.log(`Hai deselezionato la casella ${box.innerHTML}`);   
+         }) 
      })
-}
+
+    
+
+   
 
 let button = document.getElementById("play");
 button.addEventListener("click", function(){
 boxContainer.classList.remove("d-none");
 })
+}

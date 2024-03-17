@@ -33,7 +33,7 @@ main{
 header{
     width: 100%;
     height: 80px;
-    background-color: #eac7c7;
+    background-color: #ebcaca;
 }
 
 #box-container{
@@ -57,7 +57,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: #d5e3e8;
-    
+    cursor: pointer;
    
 }
 

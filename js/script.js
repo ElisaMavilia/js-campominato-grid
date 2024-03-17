@@ -26,7 +26,7 @@ for (let i = 1; i <= 100; i++){
    box.addEventListener ("click", function(){ 
         box.classList.add("bg-color");
         console.log(`Hai selezionato la casella ${box.innerHTML}`);
- // Creo un secondo eventListener per il secondo click
+    // Creo un secondo eventListener per il secondo click
         box.addEventListener ("click", function(){ 
             box.classList.remove("bg-color");
             console.log(`Hai deselezionato la casella ${box.innerHTML}`);   
@@ -34,11 +34,12 @@ for (let i = 1; i <= 100; i++){
      })
 
     
-
-   
-
 let button = document.getElementById("play");
 button.addEventListener("click", function(){
 boxContainer.classList.remove("d-none");
 })
 }
+
+const newElement = document.getElementById("right-header");
+let tmpHtml = '';
+

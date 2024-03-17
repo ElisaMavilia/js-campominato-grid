@@ -40,6 +40,13 @@ boxContainer.classList.remove("d-none");
 })
 }
 
-const newElement = document.getElementById("right-header");
-let tmpHtml = '';
+let tmpHtml ="";
+const newElement = document.getElementById("left-header");
+let logo = document.createElement("img");
+logo.innerHTML = '<img>';
+logo.setAttribute('src',`img/logo.png`);
+logo.classList.add("logo-boolean");
+newElement.appendChild(logo);
+tmpHtml += `<img src="img/logo.png">`;
+   
 
